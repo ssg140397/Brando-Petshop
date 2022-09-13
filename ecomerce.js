@@ -29,11 +29,11 @@ function cargarCliente() {
     mostrarCliente (cliente1)
 }
 
-function mostrarCliente(Cliente) {
+function mostrarCliente(Cliente1) {
     let formulario = document.getElementById ("cliente")
     formulario.innerHTML = "";
     let contenido = document.createElement ("div")
-    contenido.innerHTML = `<h1>¡Perfecto! ${Cliente.nombre}! Estaremos enviandote información muy pronto en ${Cliente.correo}</h1>`
+    contenido.innerHTML = `<h1>¡Perfecto! ${Cliente1.nombre}! Estaremos enviandote información muy pronto en ${Cliente.correo}</h1>`
     formulario.appendChild (nuevoContenido)
 }
 
