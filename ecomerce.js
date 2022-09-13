@@ -7,6 +7,35 @@ class producto {
     }
 }
 
+class cliente {
+    constructor (nombre, telefono, dirección, correo){
+        this.nombre = nombre;
+        this.telefono = telefono;
+        this.direccion = direccion
+        thiis.correo = correo
+    }
+}
+
+let boton = document.getElementById ("enviar");
+boton.addEventListener ("click", cargarCliente);
+
+function cargarCliente() {
+    let nombre = document.getElementById ("name").value;
+    let telefono = document.getElementById ("phone").value;
+    let direccion = document.getElementById ("adress").value;
+    let correo = document.getElementById ("mail").value;
+    console.log(cliente1)
+    mostrarCliente (cliente1)
+}
+
+function mostrarCliente(Cliente) {
+    let formulario = document.getElementById ("cliente")
+    formulario.innerHTML = "";
+    let contenido = document.createElement ("div")
+    contenido.innerHTML = `<h1>¡Perfecto! ${Cliente.nombre}! Estaremos enviandote información muy pronto en ${Cliente.correo}</h1>`
+    formulario.appendChild (nuevoContenido)
+}
+
 let precioProductos = [
     { marca: "chubeats", precio: "18.00", tipo: "treats" },
     {marca: "Chubi pet leash", precio: "89.90", tipo: "Correa y Collar"},
