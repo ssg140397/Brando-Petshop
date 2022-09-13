@@ -24,6 +24,7 @@ function cargarCliente() {
     let telefono = document.getElementById ("phone").value;
     let direccion = document.getElementById ("adress").value;
     let correo = document.getElementById ("mail").value;
+    let cliente1 = new cliente (nombre, telefono, direccion, correo)
     console.log(cliente1)
     mostrarCliente (cliente1)
 }
